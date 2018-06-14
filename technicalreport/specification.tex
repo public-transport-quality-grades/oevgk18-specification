@@ -32,7 +32,7 @@ Die Art der Verkehrsmittel, die an einer Haltestelle abfahren, wird wie folgt un
 \end{itquote}
 
 Die Verkehrsmittel werden weiterhin in drei Gruppen gehalten.
-Aufgrund der neuartigen Berechnung des Kursintervall sind Bahnknoten und Bahnlinie in separaten Gruppen eingeteilt und Seilbahnen wird mit den restlichen Verkehrsmittel zusammen betrachtet.
+Aufgrund der neuartigen Berechnung des Kursintervalls sind Bahnknoten und Bahnlinie in separaten Gruppen eingeteilt und Seilbahnen werden mit den restlichen Verkehrsmittel zusammen betrachtet.
 
 \begin{itemize}[noitemsep]
     \item Verkehrsmittelgruppe A
@@ -58,18 +58,18 @@ Als Bahnknoten gelten analog zu Berechnungsmethodik des Kanton Zürich Bahnstati
 Als Stichtag für die Auswertung wird ein Werktag ausserhalb der Ferienzeit und der touristischen Hochsaison definiert.
 \end{itquote}
 
-Die Einschränkung der Wahl des Stichtags wird übernommen.
-Jedoch werden 3 weitere Zeiträume definiert, einer für das Wochenende und jeweils einer für die Nacht.
+Die Einschränkung zur Wahl des Stichtags wird übernommen.
+Jedoch werden 2 weitere Zeiträume definiert, einer für das Wochenende und jeweils einer für die Nacht.
 
 \begin{itquote}
-Zur Berechnung des Kursintervalls an einer Haltestelle werden aus dem elektronischen Fahrplan die Abfahrten auf allen Linien am Stichtag zwischen 6.00 und 20.00 Uhr gezählt.
+Zur Berechnung des Kursintervalls an einer Haltestelle werden aus dem elektronischen Fahrplan die Abfahrten auf allen Linien am Stichtag zwischen 06:00 und 20:00 Uhr gezählt.
 Um die durchschnittliche Anzahl Abfahrten in eine Richtung zu ermitteln, wird die Anzahl Abfahrten halbiert.
 Für Endhaltestellen sowie Haltestellen, die nur in einer Richtung befahren werden, erfolgen entsprechende Korrekturen.
 Anschliessend wird das Kursintervall für die beiden Verkehrsmittelgruppen A und B separat berechnet (840 Minuten geteilt durch die korrigierte Anzahl Abfahrten).
 \end{itquote}
 
 Für die Kursintervallberechnung wird die statt der Anzahl Abfahrten die Wartezeit zwischen zwei Abfahrten als Grundlage verwendet.
-Der Kursintervall $\tau$ einer Haltestelle wird definiert als das "`Doppelte der erwarteten Wartezeit auf die nächste Abfahrt [\ldots] bei zufälligem Zugang im Zeitintervall $I = [a,b)$"'.~\cite{visum_manual_formula}
+Der Kursintervall $\tau$ einer Haltestelle wird definiert als das "`Doppelte der erwarteten Wartezeit auf die nächste Abfahrt [\ldots] bei zufälligem Zugang im Zeitintervall $I = [a,b)$"'~\cite{visum_manual_formula}.
 
 \subsubsection{Haltestellenkategorie}
 \label{Zusammenhang zur Berechnungsmethodik ARE:Haltestellenkategorie}
@@ -136,7 +136,7 @@ Die Radien der Kreise betragen 300 m, 500 m, 750 m und 1‘000 m.
 \end{itquote}
 
 Als Einteilung werden neu Gehminuten mit der Einstufung 5, 7.5, 10 und 15 Minuten verwendet.
-Unter der Annahme, dass die Laufgeschwindigkeit $1.4 m/s$ beträgt, wird die massgebende Gehdauer mithilfe der Laufgeschwindigkeit und der Anzahl zurückzulegende \gls{Leistungskilometer} berechnet, welche die Topografie und die Wegführung berücksichtigt.
+Unter der Annahme, dass die Laufgeschwindigkeit $1.4 m/s$ beträgt, wird die massgebende Gehdauer mithilfe der Laufgeschwindigkeit und der Anzahl zurückzulegende \gls{Leistungskilometer} berechnet, welche die Topographie und die Wegführung berücksichtigt.
 
 \subsubsection{ÖV-Güteklassen}
 \label{Zusammenhang zur Berechnungsmethodik ARE:ÖV-Güteklassen}
@@ -223,7 +223,7 @@ Verkehrsmittel werden in folgende Verkehrsmittelgruppen eingeteilt:
 \end{itemize}
 
 \paragraph{Bahnknoten}~\\
-Bahnknoten sind Bahnstationen, die entweder einen Anschluss an den nationalen oder internationalen Fernverkehr haben und/oder Bahnlinien in mindestens 6 Richtungen verkehren.
+Bahnknoten sind Bahnstationen, die entweder einen Anschluss an den nationalen Fernverkehr haben und/oder Bahnlinien in mindestens 6 Richtungen verkehren.
 
 Die Anzahl Richtungen einer Bahnstation wird gezählt als die Anzahl umliegender Bahnstationen, die mit einem beliebigen Zug innerhalb des definierten Zeitbereichs ohne Zwischenhalt erreicht werden können.
 
@@ -286,6 +286,7 @@ Kursintervall:
     \Delta_n & $(x_{n+1} - x_n)^2 - (x_{n+1} - b)^2$
 \end{conditions}
 
+\cleardoublepage
 \subsubsection{Haltestellenkategorie}
 \label{Berechnungsmethodik OeVGK18:Haltestellenkategorie}
 Die Haltestellenkategorie I bis VII wird mit folgender Tabelle eruiert:
@@ -332,9 +333,9 @@ Die Haltestellenkategorie I bis VII wird mit folgender Tabelle eruiert:
 
 \subsubsection{Gehzeit zur Haltestelle}
 \label{Berechnungsmethodik OeVGK18:Gehzeit zur Haltestelle}
-Bei der Berechnung der Gehzeit zu einer Haltestelle ist eine Laufgeschwindigkeit von $1.4 m/s$ anzunehmen und die Strecke entlang des Wege- und Strassennetzes zu berücksichtigen, welche im folgenden als Horizontaldistanz bezeichnet wird.
+Bei der Berechnung der Gehzeit zu einer Haltestelle ist eine Laufgeschwindigkeit von $1.4 m/s$ anzunehmen und die Strecke entlang des Wege- und Strassennetzes zu berücksichtigen, welche im Folgenden als Horizontaldistanz bezeichnet wird.
 
-Damit man der Topografie gerecht wird, ist als massgebende zu laufende Distanz Leistungsmeter zu verwenden:
+Damit man der Topographie gerecht wird, ist als massgebende zu laufende Distanz Leistungsmeter zu verwenden:
 \[
     x = 
 \begin{cases}
